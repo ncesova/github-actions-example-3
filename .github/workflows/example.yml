@@ -15,14 +15,13 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-
     greet:
       runs-on: ubuntu-latest
       steps:
         - name: checkout
           uses: actions/checkout@v4
         - name: greet
-          uses: ./.github/actions/action.yml
+          uses: ./.github/actions/greet
           with:
             name: "Владимир П."
 
