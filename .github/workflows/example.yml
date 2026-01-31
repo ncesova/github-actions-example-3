@@ -43,6 +43,10 @@ jobs:
       steps:
         - name: checkout
           uses: actions/checkout@v4
+
+        - name: fail
+          run: exit 1
+          
         - name: vitest
           run: echo "Test 10/10" > test-result.log
         - name: upload logs
