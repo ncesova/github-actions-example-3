@@ -17,9 +17,12 @@ concurrency:
 jobs:
 
     greet:
-      uses: ./.github/actions/my-action
-      with:
-        name: "Владимир П."
+      runs-on: ubuntu-latest
+      steps:
+        - name: greet
+          uses: ./.github/actions/my-action.yml
+          with:
+            name: "Владимир П."
 
     build:
         runs-on: ubuntu-latest
