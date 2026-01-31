@@ -41,6 +41,8 @@ jobs:
     test:
       runs-on: ubuntu-latest
       steps:
+        - name: checkout
+          uses: actions/checkout@v4
         - name: vitest
           run: npx vitest run | tee test-result.log
         - name: upload logs
