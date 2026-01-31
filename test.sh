@@ -1,0 +1,1 @@
+npx vitest run | tee test-result.log
