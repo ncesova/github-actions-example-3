@@ -22,7 +22,7 @@ jobs:
         - name: checkout
           uses: actions/checkout@v4
         - name: greet
-          uses: ./.github/actions/my-action.yml
+          uses: ./.github/actions/action.yml
           with:
             name: "Владимир П."
 
